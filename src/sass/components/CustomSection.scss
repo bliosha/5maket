@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+.custom-section {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #f5f5f5;
+  padding: 20px 10px;
+  position: relative;
+  z-index: 1;
+
+  .container {
+    max-width: 1170px;
+  }
+
+  .text-content {
+    padding-left: 30px; // Зсув тексту лівіше
+
+    .details {
+      color: #00aaff;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 38px;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .underline {
+      width: 30px;
+      height: 2px;
+      background-color: #00aaff;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      color: #777;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .image-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+
+    .phone-image {
+      max-width: 150%;
+      height: auto;
+      margin-top: -80px;
+      transform: translateX(60px); // Зсув правіше
+    }
+  }
+
+  // Адаптивність
+  @media (max-width: 767.98px) {
+    .text-content {
+      text-align: center;
+      padding-left: 0;
+
+      .title {
+        font-size: 24px;
+      }
+
+      .description {
+        font-size: 15px;
+      }
+    }
+
+    .image-content {
+      margin-top: 20px;
+
+      .phone-image {
+        margin-top: -40px;
+        transform: translateX(30px); // Менший зсув
+      }
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    .text-content .title {
+      font-size: 20px;
+    }
+
+    .text-content .description {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .image-content .phone-image {
+      margin-top: -30px;
+      transform: translateX(10px); // Ще менший зсув
+    }
+  }
+}

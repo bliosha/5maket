@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HeroSection from "../components/HeroSection.jsx";
 import FeaturesSection from "../components/Features.jsx";
 import DeviceSection from "../components/DeviceSection.jsx";
+import CustomSection from "../components/CustomSection.jsx";
 
 
 createRoot(document.getElementById('root')).render(
@@ -14,5 +15,6 @@ createRoot(document.getElementById('root')).render(
       <HeroSection/>
       <FeaturesSection/>
       <DeviceSection />
+      <CustomSection />
   </StrictMode>,
 )

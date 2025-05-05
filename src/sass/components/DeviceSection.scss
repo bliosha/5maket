@@ -5,6 +5,7 @@
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #fff;
   border-top: 1px solid #e5e5e5; // сіра полоска зверху
+  margin-bottom: -55px;
 
   .phones-image {
     max-width: 100%;
@@ -29,6 +30,7 @@
     height: 3px;
     background-color: #0094d9;
   }
+
   p{
     font-size: 20px;
   }
@@ -41,6 +43,53 @@
         margin-right: 10px;
         color: #0094d9;
       }
+    }
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .text-feature-list {
+      li {
+        font-size: 16px;
+      }
+    }
+
+    .phones-image {
+      max-height: 400px;
+      padding-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .text-feature-list {
+      li {
+        font-size: 14px;
+      }
+    }
+
+    .phones-image {
+      max-height: 300px;
+    }
+
+    .divider {
+      width: 30px;
+      height: 2px;
     }
   }
 }
