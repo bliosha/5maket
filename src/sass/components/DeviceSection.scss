@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+.device-section {
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5; // сіра полоска зверху
+
+  .phones-image {
+    max-width: 100%;
+    max-height: 550px;
+  }
+
+  h6 {
+    color: #0094d9;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #111;
+  }
+
+  .divider {
+    width: 40px;
+    height: 3px;
+    background-color: #0094d9;
+  }
+  p{
+    font-size: 20px;
+  }
+
+  .text-feature-list {
+    li {
+      font-size: 20px;
+      margin-bottom: 10px;
+      svg{
+        margin-right: 10px;
+        color: #0094d9;
+      }
+    }
+  }
+}

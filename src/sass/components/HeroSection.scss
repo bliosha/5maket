@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+.hero-section {
+  width: 100vw;
+  min-height: 80vh;
+  background: url('/src/assets/img/banner.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding-bottom: 30px;
+
+  .content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .text-content {
+    grid-column: span 6;
+
+    .intro-text {
+      font-weight: 600;
+      font-size: 16px;
+
+      .label {
+        color: #00aaff;
+        padding: 2px 6px;
+        margin-right: 5px;
+      }
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: 500;
+      margin: 20px 0;
+    }
+
+    .description {
+      color: #aaa;
+      font-size: 20px;
+      max-width: 550px;
+      margin-bottom: 70px;
+      line-height: 1.8;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+
+      .btn-primary, .btn-outline-light {
+        border-radius: 5px;
+        padding: 8px 15px;
+        max-width: 160px;
+        height: 50px;
+        font-weight: 800;
+      }
+
+      .btn-primary {
+        background-color: #00aaff;
+        border-color: #00aaff;
+      }
+
+      .btn-outline-light {
+        color: white;
+        border-color: gray;
+
+        &:hover {
+          background-color: gray;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .image-content {
+    grid-column: span 6;
+    display: flex;
+    justify-content: center;
+
+    .phone-images {
+      width: 100%;
+      max-width: 500px;
+      height: 700px;
+      background: url('/src/assets/img/verticle-phone.png') no-repeat center bottom;
+      background-size: contain;
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding-bottom: 40px;
+    padding-top: 65px;
+
+    .text-content,
+    .image-content {
+      grid-column: span 6; // зменшується, але в ряд
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    .description {
+      font-size: 15px;
+      margin-bottom: 40px;
+    }
+
+    .phone-images {
+      height: 600px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 50px;
+
+    .content-container {
+      grid-template-columns: repeat(12, 1fr);
+      gap: 20px;
+    }
+
+    .text-content,
+    .image-content {
+      grid-column: span 6; // зберігає рядкову структуру
+    }
+
+    .text-content {
+      .description {
+        margin-bottom: 30px;
+      }
+
+      .btn-group {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+    }
+
+    .phone-images {
+      max-width: 280px;
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding-bottom: 60px;
+    padding-top: 30px;
+
+    .text-content,
+    .image-content {
+      grid-column: span 12; // вже стовпчиком на дуже малих екранах
+      text-align: center;
+    }
+
+    .text-content {
+      .description {
+        margin-bottom: 20px;
+      }
+
+      .btn-group {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    .phone-images {
+      max-width: 220px;
+      height: 300px;
+      margin-top: 20px;
+    }
+  }
+}
