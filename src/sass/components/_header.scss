@@ -7,6 +7,13 @@
   left: 0;
   background-size: cover;
   background-position: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  &.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); // або будь-який інший колір
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
 
 
   .container-fluid {
@@ -121,6 +128,7 @@
     height: auto;
     padding: 10px 0;
 
+
     .container-fluid {
       display: block;
     }
@@ -154,6 +162,7 @@
       justify-content: center;
       padding: 0;
       width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
     }
 
     .navbar-collapse {
@@ -163,6 +172,12 @@
 
       &:not(.collapse) {
         display: block;
+      }
+    }
+    .site-header{
+      &.collapse{
+        background-color: rgba(0, 0, 0, 0.9); // або будь-який інший колір
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       }
     }
 
@@ -176,4 +191,5 @@
       margin-left: 0; // Reset margin for mobile view
     }
   }
+
 }

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+.contact-section {
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+  background: #f8f9fa;
+  padding: 60px 0 0; // Важливо: прибираємо padding-bottom
+  margin: 0;
+  text-align: center;
+
+  .section-subtitle {
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .divider {
+    width: 30px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 24px auto 14px;
+  }
+
+  .contact-info {
+    p {
+      margin: 0;
+      color: #777;
+      font-size: 20px;
+    }
+
+    svg {
+      font-size: 24px;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+  }
+
+  .contact-form-wrapper {
+    max-width: 1000px;
+    margin: 50px auto 0;
+    position: relative;
+    z-index: 10;
+
+    .bg-black {
+      background-color: #0c0c0f;
+      padding: 60px 80px;
+      border-radius: 2px;
+    }
+
+    .form-control {
+      background: transparent;
+      border: 1px solid #333;
+      color: #fff;
+      border-radius: 0;
+      font-size: 14px;
+      padding: 18px;
+      margin-bottom: 36px;
+
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+
+    .send-button {
+      background-color: #009efb;
+      border: none;
+      padding: 10px 30px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+      border-radius: 2px;
+      float: right; // Кнопка праворуч
+
+      @media (max-width: 767px) {
+        float: none;
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .map-background {
+    background: url('/src/assets/img/map.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+    margin-top: -90px;
+    overflow: hidden; // запобігає прориву
+  }
+
+}
