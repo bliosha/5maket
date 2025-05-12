@@ -7,6 +7,7 @@ import CustomSection from "./components/CustomSection.jsx";
 import TestimonialsSlider from "./components/TestimonialsSlider.jsx";
 import PricingPlans from "./components/PricingPlans.jsx";
 import ContactUs from "./components/ContactUs.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
     return (
@@ -30,6 +31,9 @@ const App = () => {
             </div>
             <div id="contact">
                 <ContactUs/>
+            </div>
+            <div id="footer">
+                <Footer/>
             </div>
         </>
     );
