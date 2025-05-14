@@ -1,200 +1,199 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
 .hero-section {
-  padding-top: 8.5vh;
-  width: 100%;
-  max-height: 85.6vh;
+  font-family: 'Source Sans Pro', sans-serif;
   background: url('/src/assets/img/banner.jpg') no-repeat center center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  color: white;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  position: relative;
+  color: #fff;
+  padding-top: 6vh;
+  height: 86vh;
   overflow: hidden;
-  z-index: 1;
-  padding-bottom: 30px;
 
-  .content-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+  .container {
     max-width: 1170px;
-    margin: 0 ;
-    margin-left: 16.9vh;
-    width: 100%;
-    align-items: center;
-    gap: 30px;
+    margin: 0 17vh;
   }
 
-  .text-content {
-    grid-column: span 6;
-
-    .intro-text {
-      font-weight: 700;
-      font-size: 20px;
-
-
-      .label {
-        color: #00aaff;
-        padding: 2px 0;
-        margin-right: 5px;
-      }
-    }
-
-    h1 {
-      padding-top: 4px;
-      font-size: 60px;
-      font-weight: 600;
-      line-height: 1.03;
-      letter-spacing: 0.4px;
-      word-spacing: 5px;
-      width: 120%;
-    }
-
-    .description {
-      color: #aaa;
-      font-size: 22px;
-      max-width: 550px;
-      margin-bottom: 70px;
-      line-height: 1.8;
-    }
-
-    .btn-group {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-
-      .btn-primary, .btn-outline-light {
-        border-radius: 2px;
-        padding: 8px 15px;
-        max-width: 160px;
-        height: 50px;
-        font-weight: 800;
-      }
-
-      .btn-primary {
-        background-color: #00aaff;
-        border-color: #00aaff;
-
-      }
-
-      .btn-outline-light {
-        color: white;
-        border-color: gray;
-
-        &:hover {
-          background-color: gray;
-          color: white;
-        }
-      }
-    }
+  .intro {
+    font-size: 18px;
+    color: #00bcd4;
+    text-transform: uppercase;
+    letter-spacing: 1.72px;
+    margin-bottom: 24px;
+    font-weight: 700;
   }
 
-  .image-content {
-    grid-column: span 6;
+  .title {
+    font-size: 60px;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    line-height: 62px;
+    margin-bottom: 30px;
+    width: 120%;
+  }
+
+  .description {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0.2px;
+    color: #ccc;
+    margin-bottom: 8vh;
+    width: 110%;
+
+  }
+
+  .buttons {
     display: flex;
-    justify-content: center;
+    gap: 23px;
 
-    .phone-images {
+    .btn {
+      padding: 17px 36px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-radius: 3px;
+      letter-spacing: 0.1px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-download {
+      background-color: #00bcd4;
+      color: #fff;
+    }
+
+    .btn-view {
+      padding: 17px 40px;
+      border: 1px solid #fff;
+      color: #fff;
+      background-color: transparent;
+    }
+  }
+
+  .phones-img {
+    padding-left: 29.2vh;
+    max-width: 300%;
+    height: 80vh;
+    margin-top: 18vh;
+  }
+}
+
+/* Responsive styles - keeping original code intact */
+@media (max-width: 1520px) {
+  .hero-section {
+    .container {
+      margin: 0 10vh;
+    }
+    
+    .title {
+      font-size: 52px;
+      line-height: 56px;
       width: 100%;
-      max-width: 900px;
-      height: 700px;
-      background: url('/src/assets/img/verticle-phone.png') no-repeat center bottom;
-      background-size: contain;
-      transform: translate(148px,10px) scale(1.13);
     }
-  }
-
-  @media (max-width: 992px) {
-    padding-bottom: 40px;
-    padding-top: 65px;
-
-    .text-content,
-    .image-content {
-      grid-column: span 6; // зменшується, але в ряд
-    }
-
-    h1 {
-      font-size: 36px;
-    }
-
+    
     .description {
-      font-size: 15px;
-      margin-bottom: 40px;
+      width: 100%;
+      font-size: 18px;
+      margin-bottom: 28px;
     }
-
-    .phone-images {
-      height: 600px;
+    
+    .phones-img {
+      padding-left: 15vh;
+      height: 70vh;
     }
-  }
-
-  @media (max-width: 1370px) {
-    .image-content{
-      .phone-images{
-        transform:none ;
+    .buttons{
+      .btn{
+        padding: 10px 10px;
+        font-size: 16px;
       }
     }
   }
-  @media (max-width: 768px) {
-    padding-bottom: 50px;
+}
 
-    .content-container {
-      grid-template-columns: repeat(12, 1fr);
-      gap: 20px;
+@media (max-width: 991px) {
+  .hero-section {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 0;
+    
+    .container {
+      margin: 0 5vh;
     }
-
-    .text-content,
-    .image-content {
-      grid-column: span 6; // зберігає рядкову структуру
+    
+    .title {
+      font-size: 42px;
+      line-height: 48px;
+      width: 100%;
     }
-
-    .text-content {
-      .description {
-        margin-bottom: 30px;
-      }
-
-      .btn-group {
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-      }
+    
+    .description {
+      font-size: 18px;
+      line-height: 28px;
+      width: 100%;
     }
-
-    .phone-images {
-      max-width: 280px;
-      height: 400px;
+    
+    .phones-img {
+      padding-left: 5vh;
+      height: auto;
+      max-width: 100%;
     }
   }
+}
 
-  @media (max-width: 576px) {
-    padding-bottom: 60px;
-    padding-top: 30px;
-
-    .text-content,
-    .image-content {
-      grid-column: span 12; // вже стовпчиком на дуже малих екранах
-      text-align: center;
+@media (max-width: 767px) {
+  .hero-section {
+    padding: 40px 0;
+    
+    .container {
+      margin: 0 20px;
     }
-
-    .text-content {
-      .description {
-        margin-bottom: 20px;
-      }
-
-      .btn-group {
-        flex-direction: column;
-        align-items: center;
+    
+    .intro {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    
+    .title {
+      font-size: 32px;
+      line-height: 38px;
+    }
+    
+    .description {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+    
+    .buttons {
+      flex-direction: column;
+      gap: 15px;
+      
+      .btn {
+        padding: 12px 24px;
+        font-size: 16px;
+        text-align: center;
       }
     }
+    
+    .phones-img {
+      padding-left: 0;
+      margin: 30px auto 0;
+      max-width: 80%;
+      height: auto;
+    }
+  }
+}
 
-    h1 {
+@media (max-width: 480px) {
+  .hero-section {
+    .title {
       font-size: 28px;
+      line-height: 34px;
     }
-
-    .phone-images {
-      max-width: 220px;
-      height: 300px;
-      margin-top: 20px;
+    
+    .buttons .btn {
+      width: 100%;
     }
   }
 }
