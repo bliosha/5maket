@@ -17,30 +17,35 @@
     .details {
       color: #00aaff;
       font-weight: 700;
-      font-size: 16px;
-      letter-spacing: 1px;
+      font-size: 20px;
+      letter-spacing: 0.9px;
       text-transform: uppercase;
       margin-bottom: 10px;
     }
 
     .title {
-      font-size: 38px;
+      font-size: 46px;
+      letter-spacing: -0.2px;
       font-weight: 700;
       color: #222;
       margin-bottom: 10px;
     }
 
     .underline {
-      width: 30px;
+      margin-top: 3.7vh;
+      width: 55px;
       height: 2px;
       background-color: #00aaff;
-      margin-bottom: 20px;
+      margin-bottom: 28px;
     }
 
     .description {
       color: #777;
-      font-size: 20px;
-      line-height: 30px;
+      font-size: 25px;
+      line-height: 34px;
+      width: 112%;
+      letter-spacing: -0.7px;
+
     }
   }
 
@@ -51,10 +56,10 @@
     position: relative;
 
     .phone-image {
-      max-width: 115%;
-      height: auto;
-      margin-top: -80px;
-      transform: translateX(60px); // Зсув правіше
+      max-width: 165%;
+      height: 68vh;
+      margin-top: -48px;
+      transform: translateX(220px); // Зсув правіше
     }
   }
 
@@ -70,6 +75,8 @@
 
       .description {
         font-size: 15px;
+        width: 100%; // Фіксуємо ширину тексту, щоб не виходив за межі
+        letter-spacing: normal;
       }
     }
 
@@ -79,6 +86,8 @@
       .phone-image {
         margin-top: -40px;
         transform: translateX(30px); // Менший зсув
+        max-width: 120%; // Зменшуємо телефон
+        height: auto;
       }
     }
   }
@@ -91,11 +100,136 @@
     .text-content .description {
       font-size: 14px;
       line-height: 22px;
+      width: 100%;
     }
 
     .image-content .phone-image {
       margin-top: -30px;
       transform: translateX(10px); // Ще менший зсув
+    }
+  }
+
+  // Додаткові медіа-запити для покращеної адаптивності
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .text-content {
+      padding-left: 15px;
+      
+      .title {
+        font-size: 36px;
+      }
+      
+      .description {
+        font-size: 20px;
+        line-height: 30px;
+        width: 100%;
+      }
+    }
+    
+    .image-content {
+      .phone-image {
+        max-width: 110%; // Зменшуємо розмір телефону
+        height: auto;
+        transform: translateX(30px); // Зменшуємо зсув
+      }
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .text-content {
+      .title {
+        font-size: 40px;
+      }
+      
+      .description {
+        font-size: 22px;
+        width: 105%;
+      }
+    }
+    
+    .image-content {
+      .phone-image {
+        max-width: 130%; // Зменшуємо розмір
+        height: auto;
+        transform: translateX(60px); // Зменшуємо зсув, щоб не виходило за межі
+      }
+    }
+  }
+
+  @media (min-width: 1200px) and (max-width: 1699px) {
+    .image-content {
+      .phone-image {
+        max-width: 120%; // Зменшуємо розмір
+        height: auto;
+        transform: translateX(70px); // Зменшуємо зсув
+      }
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .image-content {
+      .phone-image {
+        max-width: 160%; // Контролюємо розмір на великих екранах
+        transform: translateX(220px); // Зсув, який не виходить за межі
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px 5px;
+    
+    .text-content {
+      .details {
+        font-size: 16px;
+      }
+      
+      .title {
+        font-size: 18px;
+      }
+      
+      .underline {
+        margin-top: 2vh;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .description {
+        font-size: 13px;
+        line-height: 20px;
+        width: 100%;
+      }
+    }
+    
+    .image-content {
+      .phone-image {
+        max-width: 100%;
+        height: auto;
+        margin-top: -20px;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  @media (orientation: landscape) and (max-height: 600px) {
+    padding: 10px 5px;
+    
+    .text-content {
+      .title {
+        margin-bottom: 5px;
+      }
+      
+      .underline {
+        margin-top: 1.5vh;
+        margin-bottom: 15px;
+      }
+    }
+    
+    .image-content {
+      .phone-image {
+        height: 55vh;
+        max-width: 120%;
+        transform: translateX(40px);
+      }
     }
   }
 }

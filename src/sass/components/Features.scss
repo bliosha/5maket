@@ -5,31 +5,42 @@
   position: relative;
   padding: 60px 0;
   background: white;
+  max-width: 1170px;
+  margin: 0 auto;
 
   h6 {
     color: #0094d9;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: 0.5px;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    margin-bottom: 12px;
   }
 
   h2 {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 45px;
   }
 
   .divider {
     width: 40px;
     height: 3px;
     background-color: #0094d9;
+    margin-top: 4.8vh;
+    padding: 0 26px;
     margin-bottom: 40px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; // або space-between, залежно від бажаного вирівнювання
+    gap: 0 95px; // вертикальний та горизонтальний відступи
   }
 
   .feature-icon {
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    margin: 42px auto;
     border-radius: 50%;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -49,15 +60,149 @@
   }
 
   h5 {
-    margin-top: 20px;
+    margin-top: -2px;
     font-weight: 200;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   p {
-    font-size: 20px;
+    font-size: 22px;
     color: #999;
-    max-width: 280px;
-    margin: 0 auto;
+    width: 115%;
+    margin: 12px auto;
+    letter-spacing: 0.5px;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 1199px) {
+    padding: 50px 0;
+    max-width: 960px;
+
+    h2 {
+      font-size: 38px;
+    }
+
+    .row {
+      margin: 0 auto;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .feature-icon {
+      width: 100px;
+      height: 100px;
+      font-size: 22px;
+    }
+
+    h5 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 18px;
+      max-width: 280px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 40px 0;
+    max-width: 720px;
+
+    h6 {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+    .row {
+      margin: 0 auto;
+      width: 100%;
+      gap: 0 50px;
+    }
+
+    .divider {
+      margin-top: 3vh;
+      margin-bottom: 30px;
+    }
+    h5{
+      width: 110%;
+    }
+
+    p {
+      margin-left: 5px;
+      max-width: 250px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 30px 0;
+    max-width: 540px;
+
+    h6 {
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    .row {
+      margin: 0;
+      padding-top: 3vh;
+      flex-wrap: wrap;
+      gap: 0 30px;
+    }
+
+    .feature-icon {
+      width: 90px;
+      height: 90px;
+      font-size: 20px;
+      margin: 30px auto;
+    }
+
+    h5 {
+      font-size: 22px;
+      padding-top: 15px;
+    }
+
+    p {
+      font-size: 16px;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 575px) {
+    max-width: 100%;
+    padding: 30px 15px;
+
+    h2 {
+      font-size: 24px;
+    }
+
+    .row {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      font-size: 18px;
+      margin: 25px auto;
+    }
+
+    h5 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      width: 100%;
+      padding: 0 15px;
+    }
   }
 }

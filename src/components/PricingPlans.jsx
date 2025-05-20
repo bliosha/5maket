@@ -17,9 +17,9 @@ const PricingPlans = () => {
                     <h2 className="title">Pricings & Plans</h2>
                     <div className="underline mx-auto"></div>
                 </div>
-                <div className="row justify-content-center">
+                <div className="row justify-content-center g-0">
                     {plans.map((plan, idx) => (
-                        <div key={idx} className="col-12 col-sm-6 col-lg-3 mb-4">
+                        <div key={idx} className="col-12 col-sm-6 col-lg-3 mb-3 px-0">
                             <div className={`pricing-card ${plan.featured ? 'featured' : ''}`}>
                                 <div className="card-header text-center text-uppercase font-weight-bold">
                                     {plan.title}

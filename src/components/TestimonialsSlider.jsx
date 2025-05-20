@@ -62,6 +62,7 @@ const TestimonialsSlider = () => {
                         <div className="col-12 text-center">
                             <p className="subtitle">QUALITY HAS ITS PRICE</p>
                             <h2 className="title">Pricings & Plans</h2>
+                            <div className="divider"></div>
                         </div>
                     </div>
 
@@ -70,7 +71,7 @@ const TestimonialsSlider = () => {
                             <Carousel.Item key={index}>
                                 <div className="row testimonial-slide">
                                     {group.map((item, i) => (
-                                        <div className="col-md-6" key={i}>
+                                        <div className="col-md-6 testimonial-item" key={i}>
                                             <blockquote>{item.text}</blockquote>
                                             <div className="author">
                                                 <img src={item.avatar} alt={item.author} />
@@ -91,13 +92,13 @@ const TestimonialsSlider = () => {
             {/* CTA з сірим фоном ПІД слайдером */}
             <div className="cta-footer">
                 <div className="container">
-                    <div className="row justify-content-between align-items-center">
-                        <div className="col-md-auto">
+                    <div className="row nowrap-row align-items-center">
+                        <div className="col-md-auto cta-text-container">
                             <p className="cta-text">
-                                <strong>Like what you see?</strong> Get this great theme now!
+                                <strong>Like what you see?</strong> <thin>Get this great theme now!</thin>
                             </p>
                         </div>
-                        <div className="col-md-auto d-flex flex-md-row flex-column align-items-center gap-3">
+                        <div className="col-md-auto buttons-container ms-auto">
                             <button className="btn btn-outline-dark">VIEW FEATURES</button>
                             <button className="btn btn-primary">DOWNLOAD NOW</button>
                         </div>

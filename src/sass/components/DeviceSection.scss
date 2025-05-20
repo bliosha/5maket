@@ -7,89 +7,267 @@
   border-top: 1px solid #e5e5e5; // сіра полоска зверху
   margin-bottom: -55px;
 
+  .container {
+   width: 1170px;
+  }
+
   .phones-image {
-    max-width: 100%;
-    max-height: 550px;
+    max-width: 120%;
+    height: 78.5vh;
+    margin-left: -14%;
+
   }
 
   h6 {
     color: #0094d9;
     font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.5px;
+    font-size: 20px;
+    letter-spacing: 1px;
   }
 
   h2 {
-    font-size: 40px;
+    margin-top: 1.4vh;
+    font-size: 45px;
     font-weight: 700;
+    width: 120%;
     color: #111;
   }
 
   .divider {
+    margin-top: 3.5vh;
+    padding: 0 28px;
     width: 40px;
     height: 3px;
     background-color: #0094d9;
   }
 
   p{
-    font-size: 20px;
+    padding-top: 15px;
+    font-size: 25px;
+    line-height: 3.3vh;
+    letter-spacing: -0.7px;
+    width: 130%; // Adjusted from 115% to prevent overflow
+    padding-bottom: 2.1vh;
   }
 
   .text-feature-list {
     li {
-      font-size: 20px;
-      margin-bottom: 10px;
+      font-size: 22px;
+      letter-spacing: 0.6px;
+      margin-bottom: 14px;
       svg{
-        margin-right: 10px;
+        margin-right: 14px;
         color: #0094d9;
       }
     }
   }
+  
+  // Move text content to the right
+  .row .col-md-6:last-child {
+    margin-top: -8.6vh;
+    padding-left: 10.2vh;
+  }
 
   /* Responsive styles */
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 30px;
-    }
-
+  @media (max-width: 1560px) {
     p {
-      font-size: 16px;
+      width: 95%;
     }
-
-    .text-feature-list {
-      li {
-        font-size: 16px;
+  }
+  
+  @media (max-width: 1460px) {
+    p {
+      width: 90%;
+      font-size: 23px;
+    }
+    
+    .row .col-md-6:last-child {
+      padding-left: 8vh;
+    }
+  }
+  
+  @media (max-width: 1330px) {
+    .row .col-md-6:last-child {
+      padding-left: 7vh;
+    }
+  }
+  
+  @media (max-width: 1240px) {
+    p {
+      width: 85%;
+      font-size: 21px;
+    }
+    
+    .text-feature-list li {
+      font-size: 19px;
+    }
+    
+    .row .col-md-6:last-child {
+      padding-left: 6vh;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .phones-image {
+      height: 75vh;
+    }
+    
+    h2 {
+      font-size: 40px;
+    }
+    
+    p {
+      font-size: 20px;
+      width: 100%;
+      line-height: 3vh;
+    }
+    
+    .text-feature-list li {
+      font-size: 18px;
+    }
+    
+    .row .col-md-6:last-child {
+      margin-top: -6vh;
+      padding-left: 5vh;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .phones-image {
+      height: 70vh;
+    }
+    
+    h6 {
+      font-size: 18px;
+      letter-spacing: 0.8px;
+    }
+    
+    h2 {
+      font-size: 36px;
+      margin-top: 1.2vh;
+    }
+    
+    .divider {
+      margin-top: 2.8vh;
+      padding: 0 22px;
+    }
+    
+    p {
+      font-size: 19px;
+      width: 100%;
+      padding-top: 12px;
+      padding-bottom: 1.8vh;
+    }
+    
+    .text-feature-list li {
+      font-size: 17px;
+      margin-bottom: 12px;
+      svg {
+        margin-right: 12px;
       }
     }
 
-    .phones-image {
-      max-height: 400px;
-      padding-bottom: 15px;
+    
+    .row .col-md-6:last-child {
+      margin-top: -4vh;
+      padding-left: 4vh;
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 767px) {
+    .phones-image {
+      max-width: 100% !important; // скидає попередні значення
+      width: 100% !important;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    
+    h6 {
+      font-size: 16px;
+      letter-spacing: 0.7px;
+    }
+    
     h2 {
-      font-size: 24px;
+      font-size: 32px;
+      margin-top: 1vh;
     }
-
+    
+    .divider {
+      margin-top: 2.2vh;
+      padding: 0 18px;
+    }
+    
     p {
-      font-size: 14px;
+      font-size: 18px;
+      width: 100%;
+      line-height: 1.5;
+      letter-spacing: -0.5px;
+      padding-top: 10px;
+      padding-bottom: 1.5vh;
     }
-
-    .text-feature-list {
-      li {
-        font-size: 14px;
+    
+    .text-feature-list li {
+      font-size: 16px;
+      margin-bottom: 10px;
+      letter-spacing: 0.3px;
+      svg {
+        margin-right: 10px;
       }
     }
+    
+    .row .col-md-6:last-child {
+      margin-top: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 
-    .phones-image {
-      max-height: 300px;
+  @media (max-width: 575px) {
+    padding: 30px 0;
+
+    .phones-image { // скидає попередні значення
+      width: 40% !important;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      margin-left: -1%;
+      object-fit: contain;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    h6 {
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    h2 {
+      font-size: 28px;
     }
 
     .divider {
+      margin: 0 15px;
+      margin-top: 1.8vh;
+      padding: 0 15px;
       width: 30px;
       height: 2px;
+    }
+
+    p {
+      width: 40% !important; // ⬅️ Переважно скасовує 130%
+      box-sizing: border-box;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .text-feature-list li {
+      padding-left: 15px;
+      font-size: 14px;
+      margin-bottom: 8px;
     }
   }
 }
