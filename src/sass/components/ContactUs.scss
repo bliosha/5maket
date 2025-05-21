@@ -1,100 +1,212 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
 .contact-section {
+  width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
   position: relative;
   background: #f8f9fa;
-  padding: 60px 0 0; // Важливо: прибираємо padding-bottom
+  padding: 60px 0;
   margin: 0;
   text-align: center;
 
+  .main {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .map-container {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    margin-top: -110px;
+
+    .map-image {
+      width: 100%;
+      height: 35vw;
+      object-fit: cover;
+      display: block;
+
+      @media (min-width: 1440px) {
+        height: 700px;
+      }
+
+      @media (max-width: 991px) {
+        height: 400px;
+        margin-top: -60px;
+      }
+
+      @media (max-width: 767px) {
+        height: 300px;
+        margin-top: -40px;
+      }
+    }
+  }
+
+  .contact-form-wrapper {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+
+    .bg-black {
+      padding: 56px 80px;
+      border-radius: 2px;
+
+      .form-control {
+        margin-top: 22px;
+        background: transparent;
+        border: 1px solid #333;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 18px;
+        padding: 10px 21px;
+        margin-bottom: 28px;
+        margin-left: 6px;
+        height: 6.4vh;
+        width: 40vh;
+
+        @media (max-width: 991px) {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        &::placeholder {
+          color: #aaa;
+        }
+      }
+
+      textarea.form-control {
+        padding-top: 16px;
+        padding-left: 24px;
+        height: 25vh !important;
+        width: 95% !important;
+        resize: none;
+        min-height: 180px;
+        margin-left: -10px;
+        margin-right: -10px;
+
+        @media (max-width: 991px) {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        @media (max-width: 767px) {
+          height: 16vh !important;
+          min-height: 150px;
+        }
+      }
+
+      .send-button {
+        background-color: #009efb;
+        border: none;
+        color: #fff;
+        padding: 18px 30px;
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:hover {
+          background-color: #007bff;
+        }
+      }
+    }
+  }
+
+  // Remove bottom padding from section
+  padding-bottom: 0 !important;
+
+  // Ensure footer follows immediately
+  &::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+  }
   .section-subtitle {
     color: #007bff;
     font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
     margin-bottom: 10px;
   }
 
   .section-title {
-    font-size: 32px;
+    font-size: 46px;
     font-weight: 700;
     margin-bottom: 10px;
   }
 
   .divider {
-    width: 30px;
+    width: 50px;
     height: 3px;
     background-color: #007bff;
-    margin: 24px auto 14px;
+    margin: 35px auto 28px;
   }
 
   .contact-info {
-    p {
+    padding-bottom: 40px;
+    width: 100%;
+    padding-left: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 260px;
+    flex-wrap: nowrap;
+
+    > div {
+      flex: 1;
+      min-width: 250px;
+      width: 100%;
+      text-align: center;
       margin: 0;
-      color: #777;
-      font-size: 20px;
+
+      p {
+        margin-top: 18px;
+        color: #777;
+        font-size: 23px;
+        width: 100%;
+      }
+
+      svg {
+        font-size: 24px;
+        color: #007bff;
+        margin-bottom: 15px;
+      }
     }
 
-    svg {
-      font-size: 24px;
-      color: #007bff;
-      margin-bottom: 15px;
+    @media (max-width: 1200px) {
+      gap: 200px;
+    }
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding-left: 0;
+
+      > div {
+        width: 100%;
+        min-width: 0;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      gap: 20px;
     }
   }
 
   .contact-form-wrapper {
-    max-width: 1000px;
-    margin: 50px auto 0;
+    max-width: 992px;
+    margin: 5px auto 0;
     position: relative;
     z-index: 10;
-
-    .bg-black {
-      background-color: #0c0c0f;
-      padding: 60px 80px;
-      border-radius: 2px;
-    }
-
-    .form-control {
-      background: transparent;
-      border: 1px solid #333;
-      color: #fff;
-      border-radius: 0;
-      font-size: 14px;
-      padding: 18px;
-      margin-bottom: 36px;
-
-      &::placeholder {
-        color: #aaa;
-      }
-    }
-
-    .send-button {
-      background-color: #009efb;
-      border: none;
-      padding: 10px 30px;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 14px;
-      border-radius: 2px;
-      float: right; // Кнопка праворуч
-
-      @media (max-width: 767px) {
-        float: none;
-        width: 100%;
-        display: block;
-        margin-top: 10px;
-      }
-    }
   }
-
-  .map-background {
-    background: url('/src/assets/img/map.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    height: 600px;
-    position: relative;
-    z-index: 1;
-    margin-top: -90px;
-    overflow: hidden;
-  }
-
 }
