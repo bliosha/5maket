@@ -120,7 +120,7 @@
   }
 
   // Remove bottom padding from section
-  padding-bottom: 0 !important;
+  padding-bottom: 0;
 
   // Ensure footer follows immediately
   &::after {

@@ -69,11 +69,23 @@
     font-size: 22px;
     color: #999;
     width: 115%;
-    margin: 12px auto;
+    margin: 12px auto 12px -7%;
     letter-spacing: 0.5px;
   }
 
   /* Responsive styles */
+  @media (max-width: 1522px) {
+    padding: 0 5%;
+    
+  }
+  @media (max-width: 1386px) {
+    padding: 0 10%;
+
+  }
+  @media (max-width: 1240px) {
+    padding: 0 15%;
+
+  }
   @media (max-width: 1199px) {
     padding: 50px 0;
     max-width: 960px;

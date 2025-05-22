@@ -8,7 +8,7 @@
   margin-bottom: -55px;
 
   .container {
-   width: 1170px;
+   max-width: 1170px;
   }
 
   .phones-image {
@@ -58,6 +58,9 @@
       svg{
         margin-right: 14px;
         color: #0094d9;
+        .bi{
+          margin-right: 10px;
+        }
       }
     }
   }
@@ -234,7 +237,7 @@
       height: auto;
       display: block;
       margin: 0 auto;
-      margin-left: -1%;
+      margin-left: 30%;
       object-fit: contain;
       padding-left: 0;
       padding-right: 0;
@@ -258,7 +261,7 @@
     }
 
     p {
-      width: 40% !important; // ⬅️ Переважно скасовує 130%
+      width: 100% !important; // ⬅️ Переважно скасовує 130%
       box-sizing: border-box;
       padding-left: 15px;
       padding-right: 15px;
