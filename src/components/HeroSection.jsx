@@ -1,5 +1,6 @@
 import React from 'react';
 import "../sass/components/HeroSection.scss";
+import phones from "/src/assets/img/verticle-phone.png";
 const HeroSection = () => {
     return (
         <section className="hero-section d-flex align-items-center">
@@ -21,7 +22,7 @@ const HeroSection = () => {
 
                     {/* Зображення праворуч */}
                     <div className="col-md-6 text-center">
-                        <img src="/src/assets/img/verticle-phone.png" alt="Phones" className="phones-img" />
+                        <img src={phones} alt="Phones" className="phones-img" />
                     </div>
                 </div>
             </div>

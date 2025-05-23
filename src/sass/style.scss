@@ -1,5 +1,13 @@
-@import 'components/header';
-@import "bootstrap/scss/bootstrap";
+@import 'components/_header';
+@import 'components/ContactUs';
+@import 'components/CustomSection';
+@import 'components/DeviceSection';
+@import 'components/Features';
+@import 'components/Footer';
+@import 'components/HeroSection';
+@import 'components/PricingPlans';
+@import 'components/TestimonialsSlider';
+@import "bootstrap";
 
 html, body, #root {
   font-family: 'Source Sans Pro', sans-serif;

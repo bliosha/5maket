@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "../sass/components/ContactUs.scss";
-
+import map from "/src/assets/img/map.jpg";
 const ContactUs = () => {
     return (
         <section className="contact-section">
@@ -75,7 +75,7 @@ const ContactUs = () => {
             </div>
 
             <div className="map-container">
-                <img src="/src/assets/img/map.jpg" alt="Map" className="map-image" />
+                <img src={map} alt="Map" className="map-image" />
             </div>
         </section>
     );
