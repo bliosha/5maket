@@ -76,10 +76,10 @@
     max-width: 300%;
     height: 80vh;
     margin-top: 18vh;
+
   }
 }
 
-/* Responsive styles - keeping original code intact */
 @media (max-width: 1520px) {
   .hero-section {
     .container {
@@ -107,6 +107,15 @@
         padding: 10px 10px;
         font-size: 16px;
       }
+    }
+  }
+}
+
+@media (max-width: 1154px) {
+  .hero-section {
+    .phones-img {
+      padding-left: 10vh;
+      height: 60vh;
     }
   }
 }

@@ -96,15 +96,6 @@ html, body {
 
   // Адаптивність
   @media (max-width: 991.98px) {
-    .phone-image {
-      max-width: 80%;
-      transform: none;
-      right: 0;
-      margin: 0 auto;
-    }
-  }
-
-  @media (max-width: 991.98px) {
     .container {
       padding-left: 15px;
       padding-right: 15px;

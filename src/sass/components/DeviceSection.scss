@@ -137,7 +137,8 @@
   
   @media (max-width: 991px) {
     .phones-image {
-      height: 70vh;
+      height: 60vh;
+      padding-left: 10px;
     }
     
     h6 {
@@ -146,8 +147,11 @@
     }
     
     h2 {
-      font-size: 36px;
+      font-size: 34px;
       margin-top: 1.2vh;
+      @media (max-width: 822px) {
+        font-size: 30px;
+      }
     }
     
     .divider {
