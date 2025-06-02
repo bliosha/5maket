@@ -1,7 +1,7 @@
 import React from 'react';
 import "../sass/components/DeviceSection.scss";
 
-import phones from "../assets/img/verticle-phone.png";
+import phones from "../assets/img/device/verticle-phone.png";
 
 const DeviceSection = () => {
     return (

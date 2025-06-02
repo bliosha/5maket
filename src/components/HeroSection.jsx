@@ -1,6 +1,6 @@
 import React from 'react';
 import "../sass/components/HeroSection.scss";
-import phones from "/src/assets/img/verticle-phone.png";
+import phones from "/src/assets/img/device/verticle-phone.png";
 const HeroSection = () => {
     return (
         <section className="hero-section d-flex align-items-center">

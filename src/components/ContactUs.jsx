@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "../sass/components/ContactUs.scss";
-import map from "/src/assets/img/map.jpg";
+import map from "/src/assets/img/backgrounds/map.jpg";
 const ContactUs = () => {
     return (
         <section className="contact-section">

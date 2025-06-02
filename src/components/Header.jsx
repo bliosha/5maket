@@ -1,28 +1,55 @@
 import React, { useState, useEffect } from "react";
-import "../sass/components/_header.scss";
-import logo from "../assets/img/logo.png";
+import "../sass/components/Header.scss";
+import logo from "../assets/img/backgrounds/logo.png";
 
 const Header = () => {
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     const [scrolled, setScrolled] = useState(false);
+    const [activeSection, setActiveSection] = useState("#home");
 
     const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
+    const navItems = [
+        { href: "#home", label: "Home" },
+        { href: "#features", label: "Features" },
+        { href: "#about", label: "About" },
+        { href: "#testimonials", label: "Testimonials" },
+        { href: "#pricing", label: "Pricing" },
+        { href: "#contact", label: "Contact" },
+    ];
+
+    // Scroll and section tracking
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
+            setScrolled(window.scrollY > 50);
+
+            // Detect currently visible section
+            const sections = navItems.map((item) =>
+                document.querySelector(item.href)
+            );
+            let current = "#home";
+
+            for (let section of sections) {
+                if (section) {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= 120 && rect.bottom >= 120) {
+                        current = `#${section.id}`;
+                        break;
+                    }
+                }
             }
+
+            setActiveSection(current);
         };
 
         window.addEventListener("scroll", handleScroll);
+        handleScroll(); // Initial check on load
+
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     return (
-        <header className={`site-header position-fixed w-100 top-0 start-0 zindex-100 ${scrolled ? 'scrolled' : ''}`}>
+        <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
             <div className="container-fluid h-100">
                 <div className="row w-100 h-100 align-items-center">
                     <div className="col-md-3 d-flex align-items-center justify-content-between">
@@ -32,26 +59,27 @@ const Header = () => {
                         <button
                             className="navbar-toggler d-md-none"
                             type="button"
-                            data-toggle="collapse"
-                            data-target="#navbarNav"
-                            aria-controls="navbarNav"
-                            aria-expanded={!isNavCollapsed ? true : false}
-                            aria-label="Toggle navigation"
                             onClick={handleNavCollapse}
+                            aria-expanded={!isNavCollapsed}
+                            aria-label="Toggle navigation"
                         >
                             <span className="navbar-toggler-icon"></span>
                         </button>
                     </div>
                     <div className="col-md-9">
                         <nav className="navbar navbar-expand-md justify-content-center">
-                            <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarNav">
+                            <div className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`} id="navbarNav">
                                 <ul className="navbar-nav">
-                                    <li onClick={handleNavCollapse} className="nav-item"><a className="nav-link" href="#home">Home</a></li>
-                                    <li onClick={handleNavCollapse} className="nav-item"><a className="nav-link" href="#features">Features</a></li>
-                                    <li onClick={handleNavCollapse} className="nav-item"><a className="nav-link" href="#about">About</a></li>
-                                    <li onClick={handleNavCollapse} className="nav-item"><a className="nav-link" href="#testimonials">Testimonials</a></li>
-                                    <li onClick={handleNavCollapse} className="nav-item"><a className="nav-link" href="#pricing">Pricing</a></li>
-                                    <li onClick={handleNavCollapse} className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
+                                    {navItems.map((item) => (
+                                        <li key={item.href} onClick={handleNavCollapse} className="nav-item">
+                                            <a
+                                                href={item.href}
+                                                className={`nav-link ${activeSection === item.href ? "active" : ""}`}
+                                            >
+                                                {item.label}
+                                            </a>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         </nav>

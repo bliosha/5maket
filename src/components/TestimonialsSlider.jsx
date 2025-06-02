@@ -2,12 +2,12 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../sass/components/TestimonialsSlider.scss";
 
-import avatar1 from "../assets/img/slider-img-1.jpg";
-import avatar2 from "../assets/img/slider-img-2.jpg";
-import avatar3 from "../assets/img/slider-img-3.jpg";
-import avatar4 from "../assets/img/slider-img-4.jpg";
-import avatar5 from "../assets/img/slider-img-5.jpg";
-import avatar6 from "../assets/img/slider-img-6.jpg";
+import avatar1 from "../assets/img/slider/slider-img-1.jpg";
+import avatar2 from "../assets/img/slider/slider-img-2.jpg";
+import avatar3 from "../assets/img/slider/slider-img-3.jpg";
+import avatar4 from "../assets/img/slider/slider-img-4.jpg";
+import avatar5 from "../assets/img/slider/slider-img-5.jpg";
+import avatar6 from "../assets/img/slider/slider-img-6.jpg";
 
 const testimonials = [
     {

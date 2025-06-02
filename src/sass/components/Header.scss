@@ -83,18 +83,22 @@
       &::after {
         content: '';
         position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 2px;
-        width: 0;
-        background-color: #00baff;
-        transition: width 0.3s;
+        left: 50%;
+        bottom: -12px;
+        transform: translateX(-50%);
+        width: 52px;
+        height: 10px;
+        background-image: url('/src/assets/img/daag.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: opacity 0.3s ease;
       }
 
-      &.active::after,
-      &:hover::after {
-        width: 100%;
+      &.active::after {
+        opacity: 1;
       }
+
     }
   }
 

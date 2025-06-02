@@ -1,6 +1,6 @@
 import React from "react";
 import "../sass/components/CustomSection.scss";
-import phone from "../assets/img/laid-phone2.png";
+import phone from "../assets/img/device/laid-phone2.png";
 
 const CustomSection = () => {
     return (
