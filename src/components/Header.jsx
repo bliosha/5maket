@@ -54,7 +54,13 @@ const Header = () => {
                 <div className="row w-100 h-100 align-items-center">
                     <div className="col-md-3 d-flex align-items-center justify-content-between">
                         <div className="logo">
-                            <img src={logo} alt="Lucid Logo" className="img-fluid" />
+                            <span className="lucid-logo-text">
+                              <span className="lucid-main">LUCID</span>
+                              <div className="lucid-sub-container">
+                                  <span className="lucid-sub">ONEPAGE</span>
+                                  <span className="lucid-sub">THEME</span>
+                              </div>
+                            </span>
                         </div>
                         <button
                             className="navbar-toggler d-md-none"
