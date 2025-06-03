@@ -100,7 +100,7 @@ const TestimonialsSlider = () => {
                         </div>
                         <div className="col-md-auto buttons-container ms-auto">
                             <button className="btn btn-outline-dark">VIEW FEATURES</button>
-                            <button className="btn btn-primary">DOWNLOAD NOW</button>
+                            <button  className="btn btn-primary">DOWNLOAD NOW</button>
                         </div>
                     </div>
                 </div>
