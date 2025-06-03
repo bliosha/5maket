@@ -11,7 +11,7 @@ const CustomSection = () => {
                     <div className="col-md-6 text-content">
                         <p className="details">DIP INTO THE DETAILS</p>
                         <h2 className="title">Super easy to customize</h2>
-                        <div className="underline"></div>
+                        <img src="/src/assets/img/daag.png" alt="divider" className="divider"/>
                         <p className="description">
                             Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
                             Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor

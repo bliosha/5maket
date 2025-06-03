@@ -62,7 +62,7 @@ const TestimonialsSlider = () => {
                         <div className="col-12 text-center">
                             <p className="subtitle">QUALITY HAS ITS PRICE</p>
                             <h2 className="title">Pricings & Plans</h2>
-                            <div className="divider"></div>
+                            <img src="/src/assets/img/daag.png" alt="divider" className="divider"/>
                         </div>
                     </div>
 

@@ -10,7 +10,7 @@ const ContactUs = () => {
                     <Col>
                         <p className="section-subtitle">STAY IN TOUCH</p>
                         <h2 className="section-title">Contact us</h2>
-                        <div className="divider"></div>
+                        <img src="/src/assets/img/daag.png" alt="divider" className="divider"/>
                     </Col>
                 </Row>
                 <Row className="contact-info text-center">

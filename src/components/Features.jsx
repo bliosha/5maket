@@ -57,7 +57,7 @@ const FeaturesSection = () => {
             <div className="container">
                 <h6 className="text-primary fw-bold">PRODUCT OVERVIEW</h6>
                 <h2 className="fw-bold mb-2">List of amazing features</h2>
-                <div className="divider mx-auto mb-5"/>
+                <img src="/src/assets/img/daag.png" alt="divider" className="divider"/>
                 <div className="row">
                     {features.map((feature, index) => (
                         <div key={index} className="col-md-3 col-sm-6 mb-4">

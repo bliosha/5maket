@@ -15,7 +15,7 @@ const PricingPlans = () => {
                 <div className="text-center mb-5">
                     <p className="subtitle">QUALITY HAS ITS PRICE</p>
                     <h2 className="title">Pricings & Plans</h2>
-                    <div className="underline mx-auto"></div>
+                    <img src="/src/assets/img/daag.png" alt="divider" className="divider"/>
                 </div>
                 <div className="row justify-content-center g-0">
                     {plans.map((plan, idx) => (

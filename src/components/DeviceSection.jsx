@@ -17,7 +17,7 @@ const DeviceSection = () => {
                     <div className="col-md-6">
                         <h6 className="text-uppercase text-primary">Dip into the details</h6>
                         <h2 className="fw-bold mb-3">Beautiful on every device</h2>
-                        <div className="divider mb-3"></div>
+                        <img src="/src/assets/img/daag.png" alt="divider" className="divider"/>
                         <p className="text-muted mb-4">
                             Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec
                             tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.

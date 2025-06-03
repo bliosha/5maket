@@ -123,11 +123,12 @@ $text-dark: #333;
     }
   }
 
-  .underline {
-    width: 55px;
-    height: 3px;
-    background-color: $primary-color;
-    margin-top: 3.8vh;
+  .divider {
+    width: 52px;
+    height: auto;
+    display: block;
+    margin: 2.2rem auto 40px auto;
+
     
     @media (max-width: 768px) {
       margin-top: 15px;

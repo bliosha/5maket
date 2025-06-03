@@ -23,13 +23,12 @@
   }
 
   .divider {
-    width: 40px;
-    height: 3px;
-    background-color: #0094d9;
-    margin-top: 4.8vh;
-    padding: 0 26px;
-    margin-bottom: 40px;
+    width: 52px;
+    height: auto;
+    display: block;
+    margin: 4.8vh auto 40px auto; /* по центру з відступами зверху та знизу */
   }
+
   .row {
     display: flex;
     flex-wrap: nowrap;
@@ -136,9 +135,12 @@
     }
 
     .divider {
-      margin-top: 3vh;
-      margin-bottom: 30px;
+      width: 40px;
+      height: auto;
+      display: block;
+      margin: 4.8vh auto 40px auto; /* по центру з відступами зверху та знизу */
     }
+
     h5{
       width: 110%;
     }

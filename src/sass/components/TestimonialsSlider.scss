@@ -29,13 +29,10 @@
     margin-bottom: 36px;
   }
   .divider {
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50px;
-    height: 3px;
-    background-color: #0094d9;
-    margin-bottom: 11.5vh;
+    width: 52px;
+    height: auto;
+    display: block;
+    margin: 2rem auto 40px auto; /* по центру з відступами зверху та знизу */
   }
 
   .testimonial-slide {

@@ -5,21 +5,6 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
   { ignores: ['dist'] },
-
-  // 🔧 Node.js конфіг для gulpfile.js
-  {
-    files: ['gulpfile.js'], // або 'scripts/*.js' тощо
-    languageOptions: {
-      ecmaVersion: 2020,
-      sourceType: 'script', // Node.js використовує CommonJS
-      globals: globals.node,
-    },
-    rules: {
-      ...js.configs.recommended.rules,
-    },
-  },
-
-  // 🔧 Основний конфіг для React/JSX
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
