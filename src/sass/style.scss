@@ -1,3 +1,10 @@
+// Variables and mixins
+@import 'variables';
+
+// Bootstrap
+@import "bootstrap";
+
+// Components
 @import 'components/Header';
 @import 'components/ContactUs';
 @import 'components/CustomSection';
@@ -7,7 +14,6 @@
 @import 'components/HeroSection';
 @import 'components/PricingPlans';
 @import 'components/TestimonialsSlider';
-@import "bootstrap";
 
 html, body, #root {
   font-family: 'Source Sans Pro', sans-serif;

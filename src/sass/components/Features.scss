@@ -26,14 +26,14 @@
     width: 52px;
     height: auto;
     display: block;
-    margin: 4.8vh auto 40px auto; /* по центру з відступами зверху та знизу */
+    margin: 4.8vh auto 40px auto;
   }
 
   .row {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center; // або space-between, залежно від бажаного вирівнювання
-    gap: 0 95px; // вертикальний та горизонтальний відступи
+    justify-content: center;
+    gap: 0 95px;
   }
 
   .feature-icon {
@@ -138,7 +138,7 @@
       width: 40px;
       height: auto;
       display: block;
-      margin: 4.8vh auto 40px auto; /* по центру з відступами зверху та знизу */
+      margin: 4.8vh auto 40px auto;
     }
 
     h5{

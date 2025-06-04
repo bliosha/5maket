@@ -4,7 +4,7 @@
   position: relative;
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #fff;
-  border-top: 1px solid #e5e5e5; // сіра полоска зверху
+  border-top: 1px solid #e5e5e5; // gray line
   margin-bottom: -55px;
 
   .container {
@@ -184,7 +184,7 @@
 
   @media (max-width: 767px) {
     .phones-image {
-      max-width: 80% !important; // скидає попередні значення
+      max-width: 80% !important;
       width: 80% !important;
       height: auto;
       display: block;
@@ -239,7 +239,7 @@
   @media (max-width: 575px) {
     padding: 30px 0;
 
-    .phones-image { // скидає попередні значення
+    .phones-image {
       width: 40% !important;
       height: auto;
       display: block;
@@ -268,7 +268,7 @@
     }
 
     p {
-      width: 100% !important; // ⬅️ Переважно скасовує 130%
+      width: 100% !important;
       box-sizing: border-box;
       padding-left: 15px;
       padding-right: 15px;

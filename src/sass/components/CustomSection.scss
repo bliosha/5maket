@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
 
-/* Заборона горизонтального скролу на всій сторінці */
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -27,7 +27,7 @@ html, body {
   }
 
   .text-content {
-    padding-left: 30px; // Зсув тексту лівіше
+    padding-left: 30px;
 
     .details {
       color: #0094d9;
@@ -88,13 +88,13 @@ html, body {
       height: 68vh;
       max-height: 68vh;
       margin-top: -48px;
-      transform: translateX(10%); // Зменшуємо зсув
+      transform: translateX(10%);
       position: relative;
       right: 1%;
     }
   }
 
-  // Адаптивність
+  // Responsive
   @media (max-width: 991.98px) {
     .container {
       padding-left: 15px;
@@ -141,8 +141,8 @@ html, body {
 
       .phone-image {
         margin-top: -40px;
-        transform: translateX(30px); // Менший зсув
-        max-width: 120%; // Зменшуємо телефон
+        transform: translateX(30px);
+        max-width: 120%;
         height: auto;
       }
     }
@@ -161,11 +161,11 @@ html, body {
 
     .image-content .phone-image {
       margin-top: -30px;
-      transform: translateX(10px); // Ще менший зсув
+      transform: translateX(10px);
     }
   }
 
-  // Додаткові медіа-запити для покращеної адаптивності
+//responsive
   @media (min-width: 768px) and (max-width: 991.98px) {
     .text-content {
       padding-left: 15px;
@@ -183,9 +183,9 @@ html, body {
     
     .image-content {
       .phone-image {
-        max-width: 110%; // Зменшуємо розмір телефону
+        max-width: 110%;
         height: auto;
-        transform: translateX(30px); // Зменшуємо зсув
+        transform: translateX(30px);
       }
     }
   }
@@ -204,9 +204,9 @@ html, body {
     
     .image-content {
       .phone-image {
-        max-width: 130%; // Зменшуємо розмір
+        max-width: 130%;
         height: auto;
-        transform: translateX(60px); // Зменшуємо зсув, щоб не виходило за межі
+        transform: translateX(60px);
       }
     }
   }
@@ -214,9 +214,9 @@ html, body {
   @media (min-width: 1200px) and (max-width: 1699px) {
     .image-content {
       .phone-image {
-        max-width: 120%; // Зменшуємо розмір
+        max-width: 120%;
         height: auto;
-        transform: translateX(70px); // Зменшуємо зсув
+        transform: translateX(70px);
       }
     }
   }
@@ -224,8 +224,8 @@ html, body {
   @media (min-width: 1700px) {
     .image-content {
       .phone-image {
-        max-width: 160%; // Контролюємо розмір на великих екранах
-        transform: translateX(220px); // Зсув, який не виходить за межі
+        max-width: 160%;
+        transform: translateX(220px);
       }
     }
   }
