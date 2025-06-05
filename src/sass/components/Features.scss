@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import '../_variables.scss';
 
 .features-section {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $base;
   position: relative;
   padding: 60px 0;
   background: white;
-  max-width: 1170px;
+  max-width: $con;
   margin: 0 auto;
 
   h6 {
-    color: #0094d9;
+    color: $primary-color;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: $font-size-base;
     letter-spacing: 0.7px;
     margin-bottom: 12px;
   }
 
   h2 {
     font-weight: 700;
-    font-size: 45px;
+    font-size: $font-size-h;
   }
 
   .divider {
@@ -41,18 +41,18 @@
     height: 115px;
     margin: 42px auto;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: $white;
     border: 1px solid #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 26px;
-    color: #0094d9;
+    color: $primary-color;
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: #0094d9;
-      color: #fff;
+      background-color: $primary-color;
+      color: $white;
       border-color: transparent;
       cursor: pointer;
     }
@@ -66,7 +66,7 @@
 
   p {
     font-size: 22px;
-    color: #999;
+    color: $secondary-color;
     width: 115%;
     margin: 12px auto 12px -7%;
     letter-spacing: 0.5px;
@@ -85,7 +85,7 @@
     padding: 0 15%;
 
   }
-  @media (max-width: 1199px) {
+  @media (max-width: $xl) {
     padding: 50px 0;
     max-width: 960px;
 
@@ -116,7 +116,7 @@
     }
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: $lg) {
     padding: 40px 0;
     max-width: 720px;
 
@@ -151,7 +151,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $md) {
     padding: 30px 0;
     max-width: 540px;
 
@@ -189,7 +189,7 @@
     }
   }
 
-  @media (max-width: 575px) {
+  @media (max-width: $sm) {
     max-width: 100%;
     padding: 30px 15px;
 

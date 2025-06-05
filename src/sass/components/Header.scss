@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import '../_variables.scss';
 
 .site-header {
   height: 80px;
@@ -21,7 +21,7 @@
 
   .container-fluid {
     height: 100%;
-    max-width: 1170px;
+    max-width: $con;
     margin: 0 auto;
     padding: 0 15px;
     display: grid;
@@ -70,7 +70,7 @@
         font-family: Nunito;
         font-size: 1.9rem;
         font-weight: 700;
-        color: #fff;
+        color: $white;
         letter-spacing: 1px;
         text-transform: uppercase;
         line-height: 1;
@@ -81,7 +81,7 @@
         align-items: flex-start;
         font-size: 0.7rem;
         font-weight: 700;
-        color: gray;
+        color: $secondary-color;
         letter-spacing: 1px;
         text-transform: uppercase;
         margin-top: 2px;
@@ -107,10 +107,10 @@
     margin-left: 670px; /* Push navbar items to the right */
 
     .nav-link {
-      color: #fff !important;
+      color: $white !important;
       position: relative;
       font-weight: 600;
-      font-size: 19px;
+      font-size: $font-size-base;
       padding-bottom: 5px;
       text-decoration: none;
       margin-left: 3px;
@@ -145,7 +145,7 @@
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 0.25rem;
-    color: #fff;
+    color: $white;
     cursor: pointer;
 
     &:focus {
@@ -176,7 +176,7 @@
     }
 
   }
-  @media (max-width: 767.98px) { /* Match navbar-expand-md breakpoint */
+  @media (max-width: $md) { /* Match navbar-expand-md breakpoint */
     height: auto;
     padding: 5px 0;
 

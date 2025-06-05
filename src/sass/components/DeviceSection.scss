@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import '../_variables.scss';
 
 .device-section {
   position: relative;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #fff;
+  background-color: $white;
   border-top: 1px solid #e5e5e5; // gray line
   margin-bottom: -55px;
 
   .container {
-   max-width: 1170px;
+   max-width: $con;
   }
 
   .phones-image {
@@ -19,18 +19,18 @@
   }
 
   h6 {
-    color: #0094d9;
+    color: $primary-color;
     font-weight: 700;
-    font-size: 20px;
+    font-size: $font-size-base;
     letter-spacing: 1px;
   }
 
   h2 {
     margin-top: 1.4vh;
-    font-size: 45px;
+    font-size: $font-size-h;
     font-weight: 700;
     width: 120%;
-    color: #111;
+    color: $black;
   }
 
   .divider {
@@ -56,7 +56,7 @@
       margin-bottom: 14px;
       svg{
         margin-right: 14px;
-        color: #0094d9;
+        color: $primary-color;
         .bi{
           margin-right: 10px;
         }
@@ -109,7 +109,7 @@
     }
   }
   
-  @media (max-width: 1199px) {
+  @media (max-width: $xl) {
     .phones-image {
       height: 75vh;
     }
@@ -134,7 +134,7 @@
     }
   }
   
-  @media (max-width: 991px) {
+  @media (max-width: $lg) {
     .phones-image {
       height: 60vh;
       padding-left: 10px;
@@ -182,7 +182,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $md) {
     .phones-image {
       max-width: 80% !important;
       width: 80% !important;
@@ -236,7 +236,7 @@
     }
   }
 
-  @media (max-width: 575px) {
+  @media (max-width: $sm) {
     padding: 30px 0;
 
     .phones-image {

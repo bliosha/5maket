@@ -1,13 +1,14 @@
+@import '../_variables';
 .testimonials-section {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $base;
   background: url('/src/assets/img/slider/paralax.jpg') center center / cover no-repeat;
   background-attachment: fixed;
-  color: #fff;
+  color: $white;
   padding: 100px 0 200px;
   width: 100%;
   
   .container {
-    max-width: 1170px;
+    max-width: $con;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -15,15 +16,15 @@
 
   .subtitle {
     text-transform: uppercase;
-    color: #0094d9;
+    color: $primary-color;
     font-weight: 700;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: $font-size-base;
     letter-spacing: 1.8px;
   }
 
   .title {
-    font-size: 46px;
+    font-size: $font-size-h;
     letter-spacing: -0.4px;
     font-weight: 700;
     margin-bottom: 36px;
@@ -97,7 +98,7 @@
     }
   }
 
-  // Кастомні індикатори
+  // custome-indicators
   .carousel-indicators {
     position: absolute;
     bottom: -80px;
@@ -112,7 +113,7 @@
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background-color: black;
+      background-color: $black;
       opacity: 0.8;
       margin: 0 6px;
       border: none;
@@ -120,7 +121,7 @@
 
       &.active {
         opacity: 1;
-        background-color: white;
+        background-color: $white;
       }
     }
   }
@@ -199,7 +200,7 @@
     }
   }
 
-  @media (max-width: 1199.98px) {
+  @media (max-width: $xl) {
     .testimonial-slide {
       blockquote {
         font-size: 22px;
@@ -247,12 +248,12 @@
     }
   }
 
-  @media (max-width: 991.98px) {
+  @media (max-width: $lg) {
     padding: 60px 0 100px;
 
     .testimonial-slide {
       blockquote {
-        font-size: 20px;
+        font-size: $font-size-base;
         width: 100%;
         letter-spacing: 0.5px;
       }
@@ -288,7 +289,7 @@
     }
   }
 
-  @media (max-width: 767.98px) {
+  @media (max-width: $md) {
     padding: 50px 0;
 
     .subtitle {
@@ -348,7 +349,7 @@
     }
   }
 
-  @media (max-width: 575.98px) {
+  @media (max-width: $sm) {
     padding: 40px 0;
 
     .subtitle {
@@ -408,7 +409,7 @@
   .cta-text {
     font-size: 42px;
     letter-spacing: 0.4px;
-    color: white;
+    color: $white;
     margin-bottom: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -433,23 +434,23 @@
   .btn-outline-dark {
     font-weight: bold;
     font-size: 16px;
-    border-color: gray;
-    color: white;
+    border-color: $secondary-color;
+    color: $white;
     border-radius: 4px;
     width: 205px;
     height: 65px;
 
     &:hover {
-      background-color: gray;
-      color: white;
+      background-color: $secondary-color;
+      color: $white;
     }
   }
 
   .btn-primary {
     font-weight: bold;
     font-size: 16px;
-    background-color: #0094d9;
-    border-color: #0094d9;
+    background-color: $primary-color;
+    border-color: $primary-color;
     border-radius: 4px;
     width: 205px;
     height: 65px;
@@ -507,7 +508,7 @@
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: $xl) {
   .cta-footer {
     padding: 55px 15px;
     
@@ -528,7 +529,7 @@
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: $lg) {
   .cta-footer {
     padding: 50px 15px;
 
@@ -548,7 +549,7 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: $md) {
   .cta-footer {
     padding: 40px 15px;
 
@@ -579,7 +580,7 @@
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: $sm) {
   .cta-footer {
     padding: 30px 15px;
     

@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
-
+@import '../_variables.scss';
 .contact-section {
   width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family:$base;
   position: relative;
-  background: #f8f9fa;
+  background: $white;
   padding: 60px 0;
   margin: 0;
   text-align: center;
 
   .main {
-    max-width: 1170px;
+    max-width: $con;
     margin-left: auto;
     margin-right: auto;
   }
@@ -27,16 +26,16 @@
       object-fit: cover;
       display: block;
 
-      @media (min-width: 1440px) {
+      @media (min-width: $xxl) {
         height: 700px;
       }
 
-      @media (max-width: 991px) {
+      @media (max-width: $lg) {
         height: 400px;
         margin-top: -60px;
       }
 
-      @media (max-width: 767px) {
+      @media (max-width: $md) {
         height: 300px;
         margin-top: -40px;
       }
@@ -55,8 +54,8 @@
       .form-control {
         margin-top: 22px;
         background: transparent;
-        border: 1px solid #333;
-        color: #fff;
+        border: 1px solid $secondary-color;
+        color: $white;
         border-radius: 4px;
         font-size: 18px;
         padding: 10px 21px;
@@ -73,7 +72,7 @@
         }
 
         &::placeholder {
-          color: #aaa;
+          color: $secondary-color;
         }
       }
 
@@ -101,9 +100,9 @@
       }
 
       .send-button {
-        background-color: #0094d9;
+        background-color: $primary-color;
         border: none;
-        color: #fff;
+        color: $white;
         padding: 18px 10px;
         border-radius: 4px;
         font-size: 18px;
@@ -114,9 +113,9 @@
         margin-right: -8.8rem;
 
         &:hover {
-          background-color: #0094d9;
+          background-color: $primary-color;
         }
-        @media (max-width: 991px) {
+        @media (max-width: $lg) {
           margin-right: auto;
         }
       }
@@ -134,9 +133,9 @@
     clear: both;
   }
   .section-subtitle {
-    color: #0094d9;
+    color: $primary-color;
     font-weight: 600;
-    font-size: 20px;
+    font-size: $font-size-base;
     letter-spacing: 1px;
     margin-bottom: 10px;
   }
@@ -184,7 +183,7 @@
 
       svg {
         font-size: 24px;
-        color: #0094d9;
+        color: $primary-color;
         margin-bottom: 15px;
       }
     }
@@ -192,11 +191,11 @@
     @media (max-width: 1280px) {
       gap: 8rem;
     }
-    @media (max-width: 1200px) {
+    @media (max-width: $xl) {
       gap: 7rem;
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: $lg) {
       flex-direction: column;
       align-items: center;
       gap: 30px;
@@ -206,13 +205,13 @@
       margin-right: auto;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: $md) {
       gap: 20px;
     }
   }
 
   .contact-form-wrapper {
-    max-width: 992px;
+    max-width: $lg;
     margin: 5px auto 0;
     position: relative;
     z-index: 10;
